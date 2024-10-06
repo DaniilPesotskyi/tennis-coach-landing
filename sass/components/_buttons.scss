@@ -1,0 +1,125 @@
+.button-filled {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  width: fit-content;
+  padding: 10px 24px;
+
+  border: 0;
+  border-radius: $button-border-radius;
+  background: $button-hover-grad;
+
+  font-family: "Onest";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  color: $button-default-primary-100;
+
+  overflow: hidden;
+  transition: $transition;
+  cursor: pointer;
+  z-index: 1;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: $button-default-primary-400;
+
+    z-index: -1;
+    transition: $transition;
+  }
+
+  &:hover::after {
+    opacity: 0;
+  }
+}
+
+.button-filled-icon {
+  width: 16px;
+  height: 16px;
+
+  fill: $button-default-primary-100;
+}
+
+.button-icon {
+  position: relative;
+
+  display: block;
+
+  width: fit-contents;
+  padding: 10px;
+
+  border: 0;
+  border-radius: $button-border-radius;
+  background: $button-clicked-grad;
+
+  transition: $transition;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: $button-default-primary-100;
+
+    z-index: -1;
+    transition: $transition;
+  }
+
+  &:hover::after {
+    background-color: $button-hover-light;
+  }
+
+  &:active::after {
+    opacity: 0;
+  }
+}
+
+.button-icon__icon {
+  display: block;
+
+  width: 24px;
+  height: 24px;
+}
+
+.button-icon__icon--stroke {
+  stroke: $button-default-primary-400;
+}
+
+.button-icon__icon--fill {
+  fill: $button-default-primary-400;
+}
+
+.button-icon:hover .button-icon__icon--fill {
+  fill: $button-hover-filled;
+}
+
+.button-icon:hover .button-icon__icon--stroke {
+  stroke: $button-hover-filled;
+}
+
+.button-icon:active .button-icon__icon--fill {
+  fill: $button-default-primary-100;
+}
+
+.button-icon:active .button-icon__icon--stroke {
+  stroke: $button-default-primary-100;
+}

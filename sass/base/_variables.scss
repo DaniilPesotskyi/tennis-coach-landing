@@ -1,0 +1,58 @@
+// Primary
+$primary-25: #fbfcff;
+$primary-50: #eff6fe;
+$primary-100: #e6ecfc;
+$primary-150: #e1e8fc;
+$primary-200: #cddafc;
+$primary-400: #366af3;
+$primary-700: #264aab;
+
+// Text
+$text-light: #75889c;
+$text-main: #384654;
+$text-accent: #264aab;
+$text-inactive: #b4c0cc;
+
+// Red
+$red-main: #f03b36;
+
+// Button
+$button-default-neutral-100: #A1AAB2;
+$button-default-neutral-900: #384654;
+
+$button-default-primary-100: #eff6fe;
+$button-default-primary-400: #366af3;
+
+$button-hover-filled: #264aab;
+$button-hover-grad: linear-gradient(45deg, rgba(4,34,114,1) 8%, rgba(54,106,243,1) 45%, rgba(56,108,243,1) 58%, rgba(106,142,235,1) 100%);
+$button-hover-light: #e0f0ff;
+
+$button-clicked-light: #366af3;
+$button-clicked-grad: linear-gradient(45deg, rgba(4,34,114,1) 8%, rgba(54,106,243,1) 57%, rgba(106,142,235,1) 100%);
+
+// Surface
+$surface-bg-main: #f7f9fa;
+$surface-big-card: #F7F9FA;
+
+// Gray
+$gray: #333333;
+
+// Green
+$green-100: #dff8e4;
+$green-400: #0f9329;
+
+// Neutral
+$neutral-0: #fcfcfc;
+$neutral-100-divider: #e0e4ea;
+
+// Purple
+$purple-light: #f5edfc;
+$purple-normal: #964ce5;
+
+// Misc
+$misc-card-stroke: #5d6f9b;
+// $misc-gradient: #000000;
+
+// Other
+$button-border-radius: 64px;
+$transition: all 250ms

@@ -106,11 +106,11 @@
 }
 
 .header__contacts-button-icon {
-    display: none;
+  display: none;
 
-    @include desktop {
-        display: block;
-    }
+  @include desktop {
+    display: block;
+  }
 }
 
 // lang toggler
@@ -128,17 +128,18 @@
 // menu button
 
 .header__menu-btn {
-    padding: 10px;
+  max-height: 44px;
+  padding: 10px;
 
-    border: 0;
-    background-color: transparent;
+  border: 0;
+  background-color: transparent;
 
-    @include desktop {
-        display: none;
-    }
+  @include desktop {
+    display: none;
+  }
 }
 
 .header__menu-btn-icon {
-    width: 24px;
-    height: 24px;
+  width: 24px;
+  height: 24px;
 }

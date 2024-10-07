@@ -43,16 +43,16 @@
         </nav>
         <!-- socials -->
         <div class="header__socials">
-          <button href="/" class="button-icon">
+          <a href="/" class="button-icon">
             <svg class="button-icon__icon button-icon__icon--stroke">
               <use href="./icons/icons.svg#icon-Telegram"></use>
             </svg>
-          </button>
-          <button href="/" class="button-icon">
+          </a>
+          <a href="/" class="button-icon">
             <svg class="button-icon__icon button-icon__icon--fill">
               <use href="./icons/icons.svg#icon-Viber"></use>
             </svg>
-          </button>
+          </a>
         </div>
         <!-- contacts -->
         <div class="header__contacts">
@@ -66,22 +66,53 @@
             href="tel:+380503484533"
             class="button-filled header__contacts-button"
           >
-          <svg class="header__contacts-button-icon button-filled-icon">
-            <use href="./icons/icons.svg#icon-Phone"></use>
-          </svg>
+            <svg class="header__contacts-button-icon button-filled-icon">
+              <use href="./icons/icons.svg#icon-Phone"></use>
+            </svg>
             Зв'язатися з тренером
           </a>
         </div>
         <!-- lang toggler -->
         <button type="button" class="header__lang-btn">UA</button>
         <!-- menu button -->
-        <button type="button" class="header__menu-btn">
-            <svg class="header__menu-btn-icon">
-                <use href="./icons/icons.svg#icon-Menu"></use>
-            </svg>
+        <button
+          type="button"
+          class="header__menu-btn"
+          id="mobile-menu__toggler"
+        >
+          <svg class="header__menu-btn-icon header__menu-btn-icon-open">
+            <use href="./icons/icons.svg#icon-Menu"></use>
+          </svg>
+          <svg class="header__menu-btn-icon header__menu-btn-icon-close" style="display: none">
+            <use href="./icons/icons.svg#icon-Close"></use>
+          </svg>
         </button>
 
         <!-- Mobile Menu -->
+        <div
+          class="mobile-menu__wrap mobile-menu__wrap--close"
+          id="mobile-menu"
+        >
+          <a class="body-normal mobile-menu__phone" href="tel:+380503484533">
+            +38 (050) 348 45 33
+          </a>
+          <nav class="mobile-menu__navigation">
+            <ul class="mobile-menu__navigation-list">
+              <li>
+                <a href="/" class="mobile-menu__navigation-link">Головна</a>
+              </li>
+              <li>
+                <a href="/" class="mobile-menu__navigation-link">Для кого</a>
+              </li>
+              <li>
+                <a href="/" class="mobile-menu__navigation-link">Тренер</a>
+              </li>
+              <li>
+                <a href="/" class="mobile-menu__navigation-link">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
@@ -99,5 +130,6 @@
 
     <!-- Footer -->
     <footer></footer>
+    <script src="./js/mobileMenu.js"></script>
   </body>
 </html>

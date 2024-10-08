@@ -15,7 +15,7 @@
   border-bottom-right-radius: 20px;
   background-color: $surface-big-card;
 
-  z-index: -1;
+  z-index: 1;
 
   @include desktop {
     display: none;

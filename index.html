@@ -20,7 +20,7 @@
     <header class="header">
       <div class="header__container">
         <img
-          src="./images/logo.png"
+          src="./images/logo.webp"
           class="header__logo"
           alt="логотип школи тенісу"
         />
@@ -83,7 +83,10 @@
           <svg class="header__menu-btn-icon header__menu-btn-icon-open">
             <use href="./icons/icons.svg#icon-Menu"></use>
           </svg>
-          <svg class="header__menu-btn-icon header__menu-btn-icon-close" style="display: none">
+          <svg
+            class="header__menu-btn-icon header__menu-btn-icon-close"
+            style="display: none"
+          >
             <use href="./icons/icons.svg#icon-Close"></use>
           </svg>
         </button>
@@ -119,7 +122,95 @@
     <!-- Main -->
     <main>
       <!-- Hero -->
-      <section></section>
+      <section class="hero">
+        <div class="container hero-grid">
+          <!-- title -->
+          <div class="hero__title-wrap">
+            <h1 class="heading-1 hero__title">
+              <span class="hero__title-accent">Професійний тренер</span>
+              із настільного тенісу
+            </h1>
+            <p class="body-normal hero__subtitle">
+              Невеликі групи, індивідуальний підхід та безпечна атмосфера.
+              Приєднуйтеся до нашої команди та відкрийте світ спорту для вашої
+              дитини!
+            </p>
+          </div>
+          <!-- recruitment -->
+          <div class="hero__recruitment">
+            <span class="body-normal">
+              <span class="hero__recruitment-label-accent"
+                >Відкрито набір для</span
+              >
+              дітей 1-6 класів
+            </span>
+            <div class="hero__recruitment-list">
+              <img
+                class="hero__recruitment-image"
+                src="./images/hero-img-1.webp"
+                alt=""
+              />
+              <img
+                class="hero__recruitment-image"
+                src="./images/hero-img-2.webp"
+                alt=""
+              />
+              <img
+                class="hero__recruitment-image"
+                src="./images/hero-img-3.webp"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- action button -->
+          <div class="hero__action">
+            <span class="body-normal">
+              Отримай безкоштовне пробне заннятя!
+            </span>
+            <a
+              href="tel:+380503484533"
+              class="button-filled hero__action-button"
+            >
+              <svg class="button-filled-icon">
+                <use href="./icons/icons.svg#icon-Phone"></use>
+              </svg>
+              Зв'язатися з тренером
+            </a>
+          </div>
+          <!-- coach -->
+          <div class="hero__coach">
+            <img
+              class="hero__coach-image"
+              src="./images/hero-coach-photo.webp"
+              alt=""
+            />
+            <div class="hero__coach-about">
+              <div class="hero__coach-about-head">
+                <span class="heading-6">Лобова Ірина Антонівна</span>
+                <span class="body-normal hero__coach-about-role">Тренерка</span>
+              </div>
+              <ul class="hero__coach-achievements-list">
+                <li class="hero__coach-achievements-item">
+                  <div class="hero__coach-achievements-icon-wrap">
+                    <svg class="hero__coach__icon-star">
+                      <use href="./icons/icons.svg#icon-Medal"></use>
+                    </svg>
+                  </div>
+                  Майстриня спорту України
+                </li>
+                <li class="hero__coach-achievements-item">
+                  <div class="hero__coach-achievements-icon-wrap">
+                    <svg class="hero__coach__icon-cup">
+                      <use href="./icons/icons.svg#icon-Cup"></use>
+                    </svg>
+                  </div>
+                  35+ років тренуваання
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- For who -->
       <section></section>

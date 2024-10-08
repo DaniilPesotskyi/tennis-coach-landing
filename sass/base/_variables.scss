@@ -17,22 +17,33 @@ $text-inactive: #b4c0cc;
 $red-main: #f03b36;
 
 // Button
-$button-default-neutral-100: #A1AAB2;
+$button-default-neutral-100: #a1aab2;
 $button-default-neutral-900: #384654;
 
 $button-default-primary-100: #eff6fe;
 $button-default-primary-400: #366af3;
 
 $button-hover-filled: #264aab;
-$button-hover-grad: linear-gradient(45deg, rgba(4,34,114,1) 8%, rgba(54,106,243,1) 45%, rgba(56,108,243,1) 58%, rgba(106,142,235,1) 100%);
+$button-hover-grad: linear-gradient(
+  45deg,
+  rgba(4, 34, 114, 1) 8%,
+  rgba(54, 106, 243, 1) 45%,
+  rgba(56, 108, 243, 1) 58%,
+  rgba(106, 142, 235, 1) 100%
+);
 $button-hover-light: #e0f0ff;
 
 $button-clicked-light: #366af3;
-$button-clicked-grad: linear-gradient(45deg, rgba(4,34,114,1) 8%, rgba(54,106,243,1) 57%, rgba(106,142,235,1) 100%);
+$button-clicked-grad: linear-gradient(
+  45deg,
+  rgba(4, 34, 114, 1) 8%,
+  rgba(54, 106, 243, 1) 57%,
+  rgba(106, 142, 235, 1) 100%
+);
 
 // Surface
 $surface-bg-main: #f7f9fa;
-$surface-big-card: #F7F9FA;
+$surface-big-card: #f7f9fa;
 
 // Gray
 $gray: #333333;
@@ -55,4 +66,9 @@ $misc-card-stroke: #5d6f9b;
 
 // Other
 $button-border-radius: 64px;
-$transition: all 250ms
+$transition: all 250ms;
+
+// Shadows
+$shadow-100: 0px 1px 2px rgba(0, 0, 0, 0.05), 0px 1px 3px rgba(0, 0, 0, 0.08);
+$shadow-200: 0px 2px 4px rgba(0, 0, 0, 0.05), 0px 3px 6px rgba(0, 0, 0, 0.1);
+$shadow-300: 0px 4px 6px rgba(0, 0, 0, 0.07), 0px 6px 8px rgba(0, 0, 0, 0.12);

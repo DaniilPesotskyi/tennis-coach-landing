@@ -1,89 +1,93 @@
 // Heading
 .heading-1 {
-    font-family: "Furore", system-ui;
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 40px;
+  font-family: "Furore", system-ui;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 40px;
 
-    @include desktop {
-        font-size: 52px;
-        line-height: 64px;
-    }
+  @include desktop {
+    font-size: 52px;
+    line-height: 64px;
+  }
 }
 
 .heading-2 {
-    font-family: "Furore", system-ui;
-    font-size: 24px;
-    line-height: 40px;
+  font-family: "Furore", system-ui;
+  font-size: 24px;
+  line-height: 40px;
 
-    @include desktop {
-        font-size: 44px;
-        line-height: 52px;
-    }
+  @include desktop {
+    font-size: 44px;
+    line-height: 52px;
+  }
 }
 
 .heading-3 {
-    font-family: "Furore", system-ui;
-    @include desktop {
-        font-size: 36px;
-        line-height: 44px;
-    }
-}  
+  font-family: "Furore", system-ui;
+  @include desktop {
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
 
 .heading-4 {
-    font-family: "Furore", system-ui;
-    font-size: 24px;
-    line-height: 32px;
+  font-family: "Furore", system-ui;
+  font-size: 24px;
+  line-height: 32px;
 
-    @include desktop {
-        font-size: 32px;
-        line-height: 36px;
-    }
+  @include desktop {
+    font-size: 32px;
+    line-height: 36px;
+  }
 }
 
 .heading-5 {
-    font-family: "Furore", system-ui;
-    font-size: 20px;
-    line-height: 28px;
+  font-family: "Furore", system-ui;
+  font-size: 20px;
+  line-height: 28px;
 
-    @include desktop {
-        font-size: 24px;
-        line-height: 32px;
-    }
+  @include desktop {
+    font-size: 24px;
+    line-height: 32px;
+  }
 }
 
 .heading-6 {
-    font-family: "Furore", system-ui;
-    @include desktop {
-        font-size: 16px;
-        line-height: 24px;
-    }
+  font-family: "Furore", system-ui;
+  @include desktop {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
-// Body 
+.heading-accent {
+  color: $red-main;
+}
+
+// Body
 
 .body-large {
-    font-family: "Onest", system-ui;
-    @include desktop {
-        font-size: 20px;
-        line-height: 120%;
-    }
+  font-family: "Onest", system-ui;
+  @include desktop {
+    font-size: 20px;
+    line-height: 120%;
+  }
 }
 
 .body-normal {
-    font-family: "Onest", system-ui;
-    color: $text-main;
-    
-    @include desktop {
-        font-size: 16px;
-        line-height: 24px;
-    }
+  font-family: "Onest", system-ui;
+  color: $text-main;
+
+  @include desktop {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .body-small {
-    font-family: "Onest", system-ui;
-    @include desktop {
-        font-size: 12px;
-        line-height: 150%;
-    }
+  font-family: "Onest", system-ui;
+  @include desktop {
+    font-size: 12px;
+    line-height: 150%;
+  }
 }

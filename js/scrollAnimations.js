@@ -6,7 +6,7 @@ const handleScroll = () => {
 
   if (scrollY > 100) {
     header.style.boxShadow = "0px 0px 22px -22px rgba(0,0,0,0.75)";
-    header.style.padding = "2px 0";
+    header.style.padding = "8px 0";
   } else {
     header.style.boxShadow = "none";
     header.style.padding = "";

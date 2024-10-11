@@ -69,3 +69,27 @@
     color: $button-default-neutral-900;
   }
 }
+
+// lang
+
+.mobile-menu__lang-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.mobile-menu__lang-link {
+  font-family: "Onest", system-ui;
+  font-size: 14px;
+  font-weight: 600;
+  color: $button-default-neutral-100;
+
+  &:hover {
+    color: $button-hover-filled;
+  }
+
+  &.active {
+    color: $button-hover-filled;
+  }
+}

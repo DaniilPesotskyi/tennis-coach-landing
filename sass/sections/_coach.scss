@@ -107,13 +107,34 @@
 .coach__coach-descr {
   grid-area: coach__coach-descr;
 
+  margin-bottom: 24px;
   color: $primary-25;
 
   opacity: 0.8;
+
+  @include desktop {
+    margin-bottom: 0;
+  }
 }
 
 .coach__coach-flag {
   grid-area: coach__coach-flag;
+
+  max-width: 208px;
+  height: fit-content;
+  padding: 24px 16px;
+  margin: 0 auto;
+
+  border-radius: 24px;
+  background-image: url(./../../images/coach-flag.jpg);
+  background-size: cover;
+
+  color: $primary-25;
+  text-align: center;
+
+  @include desktop {
+    margin: auto 0 0 0;
+  }
 }
 
 // exp

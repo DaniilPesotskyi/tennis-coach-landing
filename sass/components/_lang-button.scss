@@ -1,9 +1,29 @@
 .lang-btn-wrap {
+  display: none;
+
   position: relative;
+
+  @include desktop {
+    display: block;
+  }
 }
 
 .lang-btn {
-  display: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  padding: 10px 16px;
+
+  border: 0;
+  background-color: transparent;
+
+  font-family: "Onest", system-ui;
+  font-size: 14px;
+  font-weight: 600;
+  color: $button-default-neutral-100;
+
+  cursor: pointer;
 
   &:hover {
     color: $button-hover-filled;
@@ -11,24 +31,6 @@
 
   &:hover .lang-btn-icon {
     fill: $button-hover-filled;
-  }
-
-  @include desktop {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-
-    padding: 10px 16px;
-
-    border: 0;
-    background-color: transparent;
-
-    font-family: "Onest", system-ui;
-    font-size: 14px;
-    font-weight: 600;
-    color: $button-default-neutral-100;
-
-    cursor: pointer;
   }
 }
 

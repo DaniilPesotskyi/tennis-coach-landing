@@ -17,7 +17,7 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="header">
+    <header class="header" id="header">
       <div class="header__container">
         <img
           src="./images/logo.webp"
@@ -28,16 +28,24 @@
         <nav class="header__navigation">
           <ul class="header__navigation-list">
             <li class="header__navigation-item">
-              <a href="" class="header__navigation-link">Головна</a>
+              <a href="#hero" class="js-nav-item header__navigation-link"
+                >Головна</a
+              >
             </li>
             <li class="header__navigation-item">
-              <a href="" class="header__navigation-link">Для кого</a>
+              <a href="#suitability" class="js-nav-item header__navigation-link"
+                >Для кого</a
+              >
             </li>
             <li class="header__navigation-item">
-              <a href="" class="header__navigation-link">Тренер</a>
+              <a href="#coach" class="js-nav-item header__navigation-link"
+                >Тренер</a
+              >
             </li>
             <li class="header__navigation-item">
-              <a href="" class="header__navigation-link">Контакти</a>
+              <a href="#contacts" class="js-nav-item header__navigation-link"
+                >Контакти</a
+              >
             </li>
           </ul>
         </nav>
@@ -73,7 +81,10 @@
           </a>
         </div>
         <!-- lang toggler -->
-        <button type="button" class="header__lang-btn">UA</button>
+        <div class="lang-btn-wrap">
+          <button type="button" class="lang-btn">UA</button>
+          <div class="lang-btn-modal" style="display: block">yazhik</div>
+        </div>
         <!-- menu button -->
         <button
           type="button"
@@ -102,16 +113,30 @@
           <nav class="mobile-menu__navigation">
             <ul class="mobile-menu__navigation-list">
               <li>
-                <a href="/" class="mobile-menu__navigation-link">Головна</a>
+                <a href="#hero" class="js-nav-item mobile-menu__navigation-link"
+                  >Головна</a
+                >
               </li>
               <li>
-                <a href="/" class="mobile-menu__navigation-link">Для кого</a>
+                <a
+                  href="#suitability"
+                  class="js-nav-item mobile-menu__navigation-link"
+                  >Для кого</a
+                >
               </li>
               <li>
-                <a href="/" class="mobile-menu__navigation-link">Тренер</a>
+                <a
+                  href="#coach"
+                  class="js-nav-item mobile-menu__navigation-link"
+                  >Тренер</a
+                >
               </li>
               <li>
-                <a href="/" class="mobile-menu__navigation-link">Контакти</a>
+                <a
+                  href="#contacts"
+                  class="js-nav-item mobile-menu__navigation-link"
+                  >Контакти</a
+                >
               </li>
             </ul>
           </nav>
@@ -122,13 +147,13 @@
     <!-- Main -->
     <main>
       <!-- Hero -->
-      <section class="hero">
+      <section id="hero" class="hero">
         <div class="container hero-grid">
           <!-- title -->
           <div class="hero__title-wrap">
             <h1 class="heading-1 hero__title">
-              <span class="heading-accent">Професійний тренер</span>
-              із настільного тенісу
+              <span class="heading-accent">Професійний</span>
+              тренер із настільного тенісу
             </h1>
             <p class="body-normal hero__subtitle">
               Невеликі групи, індивідуальний підхід та безпечна атмосфера.
@@ -213,7 +238,7 @@
       </section>
 
       <!-- For who -->
-      <section class="suitability">
+      <section class="suitability" id="suitability">
         <div class="container">
           <h2 class="heading-2 suitability__title">
             Для кого <span class="heading-accent">підходить</span>
@@ -304,7 +329,7 @@
       </section>
 
       <!-- Coach -->
-      <section class="coach-section">
+      <section id="coach" class="coach-section">
         <div class="container coach__container">
           <h2 class="heading-2 coach__title">Хто буде проводити тренування</h2>
           <!-- coach -->
@@ -348,7 +373,7 @@
             </div>
 
             <!-- contacts -->
-            <div class="coach__contacts">
+            <div class="coach__contacts" id="contacts">
               <h3 class="heading-4 coach__contacts-title">
                 Бажаєте <span class="heading-accent">записати дитину?</span>
               </h3>
@@ -419,6 +444,14 @@
 
     <!-- Footer -->
     <footer></footer>
-    <script src="./js/mobileMenu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+
+    <script type="module" src="./js/mobileMenu.js"></script>
+    <script type="module" src="./js/scrollAnimations.js"></script>
+    <script type="module" src="./js/navigationLinks.js"></script>
+    <script type="module" src="./js/langToggler.js"></script>
   </body>
 </html>

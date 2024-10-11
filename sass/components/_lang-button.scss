@@ -1,0 +1,19 @@
+.lang-btn-wrap {
+  position: relative;
+}
+
+.lang-btn {
+  display: none;
+
+  @include desktop {
+    display: block;
+
+    padding: 10px 16px;
+  }
+}
+
+.lang-btn-modal {
+  position: absolute;
+  top: 100%;
+  right: 0;
+}

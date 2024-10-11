@@ -1,8 +1,14 @@
 .header {
+  position: sticky;
+  top: 0;
+  left: 0;
+
   padding: 10px 0;
   background-color: $surface-big-card;
 
   z-index: 2;
+
+  transition: $transition;
 }
 
 .header__container {
@@ -25,6 +31,8 @@
 .header__logo {
   width: 35px;
   height: auto;
+
+  z-index: 2;
 
   @include desktop {
     width: 71px;
@@ -60,6 +68,10 @@
   &:hover {
     color: $button-default-neutral-900;
   }
+
+  &.active {
+    color: $button-default-neutral-900;
+  }
 }
 
 // socials
@@ -77,6 +89,8 @@
 // contacts
 .header__contacts {
   display: block;
+
+  z-index: 2;
 
   @include desktop {
     display: flex;
@@ -115,18 +129,6 @@
   }
 }
 
-// lang toggler
-
-.header__lang-btn {
-  display: none;
-
-  @include desktop {
-    display: block;
-
-    padding: 10px 16px;
-  }
-}
-
 // menu button
 
 .header__menu-btn {
@@ -135,6 +137,8 @@
 
   border: 0;
   background-color: transparent;
+
+  z-index: 2;
 
   @include desktop {
     display: none;

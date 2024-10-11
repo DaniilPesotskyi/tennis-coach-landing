@@ -390,17 +390,69 @@ img {
 .lang-btn {
   display: none;
 }
+.lang-btn:hover {
+  color: #264aab;
+}
+.lang-btn:hover .lang-btn-icon {
+  fill: #264aab;
+}
 @media screen and (min-width: 1160px) {
   .lang-btn {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 4px;
     padding: 10px 16px;
+    border: 0;
+    background-color: transparent;
+    font-family: "Onest", system-ui;
+    font-size: 14px;
+    font-weight: 600;
+    color: #a1aab2;
+    cursor: pointer;
   }
+}
+
+.lang-btn-icon {
+  width: 24px;
+  height: 24px;
+  fill: #a1aab2;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: all 150ms;
+  transition: all 150ms;
+}
+.lang-btn-icon.open {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
 }
 
 .lang-btn-modal {
   position: absolute;
   top: 100%;
   right: 0;
+  width: 100%;
+  padding: 10px 16px;
+  border-radius: 24px;
+  background-color: #f7f9fa;
+  font-family: "Onest", system-ui;
+  font-size: 14px;
+  font-weight: 600;
+  color: #a1aab2;
+  opacity: 0;
+  -webkit-transition: all 150ms;
+  transition: all 150ms;
+  pointer-events: none;
+}
+.lang-btn-modal:hover {
+  color: #264aab;
+}
+.lang-btn-modal.active {
+  opacity: 1;
+  pointer-events: all;
 }
 
 .header {

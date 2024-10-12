@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Секція теннісу в Дніпрі для дітей та підлітківі"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,6 +18,7 @@
     <title>Теніс</title>
 
     <link rel="stylesheet" href="./css/index.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Header -->
@@ -23,6 +28,7 @@
           src="./images/logo.webp"
           class="header__logo"
           alt="логотип школи тенісу"
+          loading="lazy"
         />
         <!-- navigation -->
         <nav class="header__navigation">
@@ -51,12 +57,15 @@
         </nav>
         <!-- socials -->
         <div class="header__socials">
-          <a href="/" class="button-icon">
-            <svg class="button-icon__icon button-icon__icon--stroke">
+          <a href="/" class="button-icon" aria-label="перейти до телеграму">
+            <svg
+              class="button-icon__icon button-icon__icon--stroke"
+              aria-hidden="true"
+            >
               <use href="./icons/icons.svg#icon-Telegram"></use>
             </svg>
           </a>
-          <a href="/" class="button-icon">
+          <a href="/" class="button-icon" aria-label="перейти до вайберу">
             <svg class="button-icon__icon button-icon__icon--fill">
               <use href="./icons/icons.svg#icon-Viber"></use>
             </svg>
@@ -74,7 +83,10 @@
             href="tel:+380503484533"
             class="button-filled header__contacts-button"
           >
-            <svg class="header__contacts-button-icon button-filled-icon">
+            <svg
+              class="header__contacts-button-icon button-filled-icon"
+              aria-hidden="true"
+            >
               <use href="./icons/icons.svg#icon-Phone"></use>
             </svg>
             Зв'язатися з тренером
@@ -82,9 +94,13 @@
         </div>
         <!-- lang toggler -->
         <div class="lang-btn-wrap">
-          <button type="button" class="lang-btn">
+          <button
+            type="button"
+            class="lang-btn"
+            aria-label="відкрити меню з мовами"
+          >
             Ua
-            <svg class="lang-btn-icon">
+            <svg class="lang-btn-icon" aria-hidden="true">
               <use href="./icons/icons.svg#icon-Arrow"></use>
             </svg>
           </button>
@@ -95,13 +111,18 @@
           type="button"
           class="header__menu-btn"
           id="mobile-menu__toggler"
+          aria-label="відкрити мобільне меню"
         >
-          <svg class="header__menu-btn-icon header__menu-btn-icon-open">
+          <svg
+            class="header__menu-btn-icon header__menu-btn-icon-open"
+            aria-hidden="true"
+          >
             <use href="./icons/icons.svg#icon-Menu"></use>
           </svg>
           <svg
             class="header__menu-btn-icon header__menu-btn-icon-close"
             style="display: none"
+            aria-hidden="true"
           >
             <use href="./icons/icons.svg#icon-Close"></use>
           </svg>
@@ -183,17 +204,17 @@
               <img
                 class="hero__recruitment-image"
                 src="./images/hero-img-1.webp"
-                alt=""
+                alt="фотографія дитини"
               />
               <img
                 class="hero__recruitment-image"
                 src="./images/hero-img-2.webp"
-                alt=""
+                alt="фотографія дитини"
               />
               <img
                 class="hero__recruitment-image"
                 src="./images/hero-img-3.webp"
-                alt=""
+                alt="фотографія дитини"
               />
             </div>
           </div>
@@ -206,7 +227,7 @@
               href="tel:+380503484533"
               class="button-filled hero__action-button"
             >
-              <svg class="button-filled-icon">
+              <svg class="button-filled-icon" aria-hidden="true">
                 <use href="./icons/icons.svg#icon-Phone"></use>
               </svg>
               Зв'язатися з тренером
@@ -217,7 +238,7 @@
             <img
               class="hero__coach-image"
               src="./images/hero-coach-photo.webp"
-              alt=""
+              alt="фотографія тренера"
             />
             <div class="hero__coach-about">
               <div class="hero__coach-about-head">
@@ -227,7 +248,7 @@
               <ul class="hero__coach-achievements-list">
                 <li class="hero__coach-achievements-item">
                   <div class="hero__coach-achievements-icon-wrap">
-                    <svg class="hero__coach__icon-star">
+                    <svg class="hero__coach__icon-star" aria-hidden="true">
                       <use href="./icons/icons.svg#icon-Medal"></use>
                     </svg>
                   </div>
@@ -235,7 +256,7 @@
                 </li>
                 <li class="hero__coach-achievements-item">
                   <div class="hero__coach-achievements-icon-wrap">
-                    <svg class="hero__coach__icon-cup">
+                    <svg class="hero__coach__icon-cup" aria-hidden="true">
                       <use href="./icons/icons.svg#icon-Cup"></use>
                     </svg>
                   </div>
@@ -256,7 +277,11 @@
           <!-- suitability -->
           <h3 class="visually-hidden">Кому підходить теніс</h3>
           <ul class="suitability__list">
-            <li class="suitability__item">
+            <li
+              class="suitability__item"
+              data-aos="zoom-in-up"
+              data-aos-duration="400"
+            >
               <span class="suitability__item-num">1</span>
               <h4 class="suitability__item-title">
                 Дітям, батьки яких прагнуть
@@ -269,7 +294,12 @@
                 теніс у безпечній і дружній атмосфері
               </p>
             </li>
-            <li class="suitability__item">
+            <li
+              class="suitability__item"
+              data-aos="zoom-in-up"
+              data-aos-duration="400"
+              data-aos-delay="100"
+            >
               <span class="suitability__item-num">2</span>
               <h4 class="suitability__item-title">
                 Якщо ви
@@ -287,9 +317,14 @@
             які переваги <span class="heading-accent">пропонує теніс</span>
           </h3>
           <ul class="advantages__list">
-            <li class="advantages__list-item">
+            <li
+              class="advantages__list-item"
+              data-aos="zoom-in-up"
+              data-aos-duration="400"
+              data-aos-delay="100"
+            >
               <div class="advantages__list-icon-wrap">
-                <svg class="advantages__list-icon">
+                <svg class="advantages__list-icon" aria-hidden="true">
                   <use href="./icons/icons.svg#icon-Muscle"></use>
                 </svg>
               </div>
@@ -300,9 +335,14 @@
                 Покращує спритність, координацію та загальну фізичну форму
               </p>
             </li>
-            <li class="advantages__list-item">
+            <li
+              class="advantages__list-item"
+              data-aos="zoom-in-up"
+              data-aos-duration="400"
+              data-aos-delay="200"
+            >
               <div class="advantages__list-icon-wrap">
-                <svg class="advantages__list-icon">
+                <svg class="advantages__list-icon" aria-hidden="true">
                   <use href="./icons/icons.svg#icon-Brain"></use>
                 </svg>
               </div>
@@ -313,9 +353,14 @@
                 Розвиває концентрацію та вміння швидко приймати рішення
               </p>
             </li>
-            <li class="advantages__list-item">
+            <li
+              class="advantages__list-item"
+              data-aos="zoom-in-up"
+              data-aos-duration="400"
+              data-aos-delay="300"
+            >
               <div class="advantages__list-icon-wrap">
-                <svg class="advantages__list-icon">
+                <svg class="advantages__list-icon" aria-hidden="true">
                   <use href="./icons/icons.svg#icon-Tennis"></use>
                 </svg>
               </div>
@@ -326,7 +371,12 @@
                 Малотравматичний спорт із мінімальним ризиком для здоров’я
               </p>
             </li>
-            <li class="advantages__image-item">
+            <li
+              class="advantages__image-item"
+              data-aos="zoom-in-up"
+              data-aos-duration="400"
+              data-aos-delay="400"
+            >
               <h4 class="heading-5 advantages__image-title">
                 Соціальні навички
               </h4>
@@ -343,7 +393,7 @@
         <div class="container coach__container">
           <h2 class="heading-2 coach__title">Хто буде проводити тренування</h2>
           <!-- coach -->
-          <div class="coach-grid">
+          <div class="coach-grid" data-aos="zoom-in" data-aos-delay="0">
             <div class="coach__coach">
               <div class="coach__coach-grid">
                 <h3 class="heading-4 coach__coach-title">
@@ -363,7 +413,7 @@
             </div>
 
             <!-- exp -->
-            <div class="coach__exp">
+            <div class="coach__exp" data-aos="zoom-in" data-aos-delay="50">
               <div class="coach__exp-info">
                 <h3 class="heading-4 coach__exp-title">
                   <span class="coach__exp-years">35+</span>
@@ -378,14 +428,23 @@
             </div>
 
             <!-- tournament -->
-            <div class="coach__tournament">
+            <div
+              class="coach__tournament"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
               <h3 class="heading-6 coach__tournament-title">
                 Випускники виграють турніри
               </h3>
             </div>
 
             <!-- contacts -->
-            <div class="coach__contacts" id="contacts">
+            <div
+              class="coach__contacts"
+              id="contacts"
+              data-aos="zoom-in"
+              data-aos-delay="150"
+            >
               <h3 class="heading-4 coach__contacts-title">
                 Бажаєте <span class="heading-accent">записати дитину?</span>
               </h3>
@@ -404,18 +463,36 @@
                   href="tel:+380503484533"
                   class="button-filled coach__contacts-btn"
                 >
-                  <svg class="button-filled-icon">
+                  <svg
+                    class="button-filled-icon"
+                    aria-hidden="true"
+                    aria-hidden="true"
+                  >
                     <use href="./icons/icons.svg#icon-Phone"></use>
                   </svg>
                   Зв'язатися з тренером
                 </a>
-                <a href="/" class="button-icon coach__contacts-tg">
-                  <svg class="button-icon__icon button-icon__icon--stroke">
+                <a
+                  href="/"
+                  class="button-icon coach__contacts-tg"
+                  aria-label="перейти до телеграму"
+                >
+                  <svg
+                    class="button-icon__icon button-icon__icon--stroke"
+                    aria-hidden="true"
+                  >
                     <use href="./icons/icons.svg#icon-Telegram"></use>
                   </svg>
                 </a>
-                <a href="/" class="button-icon coach__contacts-viber">
-                  <svg class="button-icon__icon button-icon__icon--fill">
+                <a
+                  href="/"
+                  class="button-icon coach__contacts-viber"
+                  aria-label="перейти до вайберу"
+                >
+                  <svg
+                    class="button-icon__icon button-icon__icon--fill"
+                    aria-hidden="true"
+                  >
                     <use href="./icons/icons.svg#icon-Viber"></use>
                   </svg>
                 </a>
@@ -423,8 +500,8 @@
             </div>
 
             <!-- safe -->
-            <div class="coach__safe">
-              <svg class="coach__safe-icon">
+            <div class="coach__safe" data-aos="zoom-in" data-aos-delay="200">
+              <svg class="coach__safe-icon" aria-hidden="true">
                 <use href="./icons/icons.svg#icon-Shield"></use>
               </svg>
               <h3 class="heading-6 coach__safe-title">
@@ -441,13 +518,30 @@
             <img
               class="coach__icons-black"
               src="./icons/black-racket.svg"
+              data-aos="fade-up"
+              data-aos-duration="300"
+              data-aos-delay="0"
               alt=""
+              loading="lazy"
             />
-            <img class="coach__icons-red" src="./icons/red-racket.svg" alt="" />
+            <img
+              class="coach__icons-red"
+              src="./icons/red-racket.svg"
+              alt=""
+              data-aos="fade-up"
+              data-aos-duration="300"
+              data-aos-delay="50"
+              loading="lazy"
+            />
             <img
               class="coach__icons-ball"
               src="./icons/tennis-ball.svg"
               alt=""
+              data-aos="fade-up"
+              data-aos-offset="500"
+              data-aos-duration="300"
+              data-aos-delay="100"
+              loading="lazy"
             />
           </div>
         </div>
@@ -462,37 +556,50 @@
       <img
         class="decoicons-desktop-line"
         src="./icons/line-desktop.svg"
-        alt="decoration-icon"
+        alt=""
       />
       <img
         class="decoicons-desktop-long-line"
         src="./icons/long-line-desktop.svg"
-        alt="decoration-icon"
+        alt=""
       />
     </div>
     <div class="decoicons-mobile">
       <img
         class="decoicons-desktop-line"
         src="./icons/line-mobile.svg"
-        alt="decoration-icon"
+        alt=""
       />
       <img
         class="decoicons-desktop-long-line"
         src="./icons/line-long-1-mobile.svg"
-        alt="decoration-icon"
+        alt=""
       />
       <img
         class="decoicons-desktop-long-line-2"
         src="./icons/line-long-2-mobile.svg"
-        alt="decoration-icon"
+        alt=""
       />
     </div>
 
-    <!-- cdn -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <!-- other -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+      defer
+    ></script>
 
     <!-- scripts -->
     <script type="module" src="./js/mobileMenu.js"></script>

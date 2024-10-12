@@ -14,12 +14,3 @@ const handleScroll = () => {
 };
 
 window.addEventListener("scroll", handleScroll);
-
-// hero
-const heroRefs = {};
-
-// suitability
-const suitabilityRefs = {};
-
-// coach
-const coachRefs = {};

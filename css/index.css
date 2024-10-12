@@ -306,7 +306,7 @@ img {
 
 .mobile-menu__wrap {
   position: fixed;
-  top: 8%;
+  top: 60px;
   right: 0;
   display: -webkit-box;
   display: -ms-flexbox;

@@ -1,35 +1,19 @@
-// scroll to
 document.querySelectorAll(".js-nav-item").forEach((link) => {
   link.addEventListener("click", function (e) {
     e.preventDefault();
-    const targetId = this.getAttribute("href");
+    const targetId = this.getAttribute("href").substring(1);
+    const targetElement = document.getElementById(targetId);
 
-    gsap.to(window, {
-      scrollTo: {
-        y: targetId,
-        offsetY: 50,
-      },
-      duration: 1,
-    });
+    if (targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop - 50,
+        behavior: "smooth",
+      });
+    }
   });
 });
 
-// active navigation item
-gsap.utils.toArray("section").forEach((section) => {
-  gsap.fromTo(
-    section,
-    {},
-    {
-      scrollTrigger: {
-        trigger: section,
-        start: "top center",
-        end: "bottom center",
-        onEnter: () => setActiveLink(section.id),
-        onEnterBack: () => setActiveLink(section.id),
-      },
-    }
-  );
-});
+const sections = document.querySelectorAll("section");
 
 function setActiveLink(id) {
   document.querySelectorAll(".js-nav-item").forEach((link) => {
@@ -39,3 +23,20 @@ function setActiveLink(id) {
     }
   });
 }
+
+function handleScroll() {
+  sections.forEach((section) => {
+    const rect = section.getBoundingClientRect();
+    const sectionTop = rect.top;
+    const sectionBottom = rect.bottom;
+
+    if (
+      sectionTop <= window.innerHeight / 2 &&
+      sectionBottom >= window.innerHeight / 2
+    ) {
+      setActiveLink(section.id);
+    }
+  });
+}
+
+window.addEventListener("scroll", handleScroll);

@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Furore";
-  src: url("./../../fonts/Furore.otf") format("opentype");
+  src: url("../fonts/Furore.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -1298,8 +1298,8 @@ img {
   height: 330px;
   padding: 24px;
   border-radius: 24px;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(47%, rgba(0, 0, 0, 0)), to(rgb(29, 44, 58))), url("./../../images/advantage-mobile.webp");
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 47%, rgb(29, 44, 58) 100%), url("./../../images/advantage-mobile.webp");
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(47%, rgba(0, 0, 0, 0)), to(rgb(29, 44, 58))), url("../images/advantage-mobile.webp");
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 47%, rgb(29, 44, 58) 100%), url("../images/advantage-mobile.webp");
   background-position: top;
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -1308,8 +1308,8 @@ img {
   .advantages__image-item {
     width: 276px;
     height: 392px;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(47%, rgba(0, 0, 0, 0)), to(rgb(29, 44, 58))), url("./../../images/advantage-desktop.webp");
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 47%, rgb(29, 44, 58) 100%), url("./../../images/advantage-desktop.webp");
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(47%, rgba(0, 0, 0, 0)), to(rgb(29, 44, 58))), url("../images/advantage-desktop.webp");
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 47%, rgb(29, 44, 58) 100%), url("../images/advantage-desktop.webp");
     background-size: 276px 392px;
   }
 }
@@ -1336,7 +1336,7 @@ img {
   position: relative;
   padding: 24px;
   border-radius: 24px 24px 0 0;
-  background-image: url("./../../images/footer-bg.webp");
+  background-image: url("../images/footer-bg.webp");
   background-position: top;
 }
 @media screen and (min-width: 1160px) {
@@ -1382,7 +1382,7 @@ img {
 }
 @media screen and (min-width: 1160px) {
   .coach__coach {
-    background-image: url("./../../images/coach-1.webp");
+    background-image: url("../images/coach-1.webp");
   }
 }
 
@@ -1432,7 +1432,7 @@ img {
   padding: 24px 16px;
   margin: 0 auto;
   border-radius: 24px;
-  background-image: url(./../../images/coach-flag.jpg);
+  background-image: url(../images/coach-flag.jpg);
   background-size: cover;
   color: #fbfcff;
   text-align: center;
@@ -1513,7 +1513,7 @@ img {
   width: 100%;
   height: 200px;
   border-radius: 24px;
-  background-image: url("./../../images/coach-2-mobile.webp");
+  background-image: url("../images/coach-2-mobile.webp");
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -1523,7 +1523,7 @@ img {
     width: 270px;
     height: auto;
     background-size: 100% 100%;
-    background-image: url("./../../images/coach-2.webp");
+    background-image: url("../images/coach-2.webp");
   }
 }
 
@@ -1539,7 +1539,7 @@ img {
   height: 230px;
   padding: 24px;
   border-radius: 24px;
-  background-image: url("./../../images/coach-3.webp");
+  background-image: url("../images/coach-3.webp");
   background-size: cover;
   overflow: hidden;
 }

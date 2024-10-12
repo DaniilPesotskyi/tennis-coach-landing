@@ -9,7 +9,7 @@
   padding: 24px;
 
   border-radius: 24px 24px 0 0;
-  background-image: url("./../../images/footer-bg.webp");
+  background-image: url("../images/footer-bg.webp");
   background-position: top;
 
   @include desktop {
@@ -68,7 +68,7 @@
   background-size: cover;
 
   @include desktop {
-    background-image: url("./../../images/coach-1.webp");
+    background-image: url("../images/coach-1.webp");
   }
 }
 
@@ -126,7 +126,7 @@
   margin: 0 auto;
 
   border-radius: 24px;
-  background-image: url(./../../images/coach-flag.jpg);
+  background-image: url(../images/coach-flag.jpg);
   background-size: cover;
 
   color: $primary-25;
@@ -201,7 +201,7 @@
 
   border-radius: 24px;
 
-  background-image: url("./../../images/coach-2-mobile.webp");
+  background-image: url("../images/coach-2-mobile.webp");
   background-size: cover;
   background-position: center;
 
@@ -212,7 +212,7 @@
     height: auto;
 
     background-size: 100% 100%;
-    background-image: url("./../../images/coach-2.webp");
+    background-image: url("../images/coach-2.webp");
   }
 }
 
@@ -229,7 +229,7 @@
   padding: 24px;
 
   border-radius: 24px;
-  background-image: url("./../../images/coach-3.webp");
+  background-image: url("../images/coach-3.webp");
   background-size: cover;
 
   overflow: hidden;

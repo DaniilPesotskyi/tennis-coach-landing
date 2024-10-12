@@ -1374,8 +1374,8 @@ img {
 .coach__coach {
   grid-area: coach__coach;
   border-radius: 24px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(16, 32, 73, 0.3099833683)), color-stop(38%, rgba(16, 32, 73, 0.3996192227)), color-stop(51%, rgba(16, 32, 73, 0.59)), color-stop(90%, rgb(16, 32, 73))), url("./../../images/coach-1.webp");
-  background-image: linear-gradient(180deg, rgba(16, 32, 73, 0.3099833683) 0%, rgba(16, 32, 73, 0.3996192227) 38%, rgba(16, 32, 73, 0.59) 51%, rgb(16, 32, 73) 90%), url("./../../images/coach-1.webp");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(16, 32, 73, 0.3099833683)), color-stop(38%, rgba(16, 32, 73, 0.3996192227)), color-stop(51%, rgba(16, 32, 73, 0.59)), color-stop(90%, rgb(16, 32, 73))), url("../images/coach-1.webp");
+  background-image: linear-gradient(180deg, rgba(16, 32, 73, 0.3099833683) 0%, rgba(16, 32, 73, 0.3996192227) 38%, rgba(16, 32, 73, 0.59) 51%, rgb(16, 32, 73) 90%), url("../images/coach-1.webp");
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
